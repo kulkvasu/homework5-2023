@@ -1,0 +1,205 @@
+/*Step1 Do this later*/
+
+/*  */
+
+@keyframes logo-animation {
+    from {
+        width: 25px;
+        opacity: 0;
+    }
+
+    to {
+        width: 475px;
+        opacity: 1;
+    }
+}
+
+#logo {
+    animation: logo-animation 5s;
+
+}
+
+
+/*Step 2 - Default Mode*/
+body {
+    font-family: 'Poppins', serif;
+    background-image: url('../images/concrete_seamless.png');
+    background-color: #f1f1f1;
+}
+
+/* Step 3 */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+/* Step 4 */
+.nav_links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Step 5 */
+a:visited {
+    color: #0000EE;
+    text-decoration: none;
+}
+
+/* Step 6 */
+.card>header {
+    background-color: #288088;
+    border: 2px solid #45ADAD;
+    padding: 20px 0px 20px 0px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+/* Step 7 and Step 8 */
+.card {
+
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    /* display: flex;
+    flex-wrap: wrap;
+    flex-direction: column; */
+    flex-basis: 450px;
+}
+
+
+
+.pricing {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+
+/* step 9 */
+.gallery img {
+    display: flex;
+    border: 10px solid #50C7C7;
+    margin: 10px 10px 10px 10px;
+    width: 300px;
+
+}
+
+/* step 10 */
+.gallery {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media screen and (min-width: 900px) {
+
+    /* step 11 */
+    header {
+        display: flex;
+        flex-direction: row;
+    }
+
+    nav{
+        width: 100%;
+    }
+    .nav_links {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    /* step 12 */
+    .pricing,
+    .card {
+        /* display: flex; */
+        flex: 0 0 275px;
+        
+    }
+
+    /* step 13 */
+    body>header:first-of-type {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 999;
+    }
+
+    main {
+        margin-top: 100px;
+    }
+
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+/* step 14 */
+    #logo {
+        animation: none;
+    }
+}
+
+@media print {
+
+/* step 15 and 16*/
+    body {
+        font-family: Arial, Helvetica;
+        background-image: none;
+    }
+
+
+/* step 17 */
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav{
+        width: 100%;
+    }
+    .nav_links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        /* gap: 7.5em; */
+    }
+
+/* step 18 */
+    .pricing {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        align-items: flex-end;
+        margin-bottom: 100px;
+    }
+/* step 19 */
+    .card {
+        border: 2px solid #45ADDD;
+        /* display: flex; */
+        flex-basis: 325px;
+
+
+    }
+/* step 20 */
+    .gallery {
+        display: none;
+    }
+
+    #gallery {
+        display: none;
+    }
+/* step 21 */
+    .card li:nth-child(2)::after {
+        content: "\1F44D";
+    }
+
+}
