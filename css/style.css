@@ -125,16 +125,14 @@ a:visited {
 
     /* step 13 */
     body>header:first-of-type {
-        position: fixed;
+        position: sticky;
         top: 0;
         left: 0;
         right: 0;
         z-index: 999;
     }
 
-    main {
-        margin-top: 100px;
-    }
+
 
 
 }
