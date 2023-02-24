@@ -83,7 +83,7 @@ a:visited {
 
 /* step 9 */
 .gallery img {
-/*     display: flex; */
+    display: flex;
     border: 10px solid #50C7C7;
     margin: 10px 10px 10px 10px;
     width: 300px;
